@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	
+
+}
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Bubblegum Sans', cursive;
+	min-height: 100vh;
+	background: #161623;
+}
+
+.container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*flex-wrap: wrap;*/
+	padding: 40px 0;
+	width: 400px;
+	height: 220px;
+	z-index: 10;
+	
+}
+
+
+.box
+{
+	color: #fff;
+	text-align: center;
+	position: relative;
+	transition: 0.5s;
+	padding: 40px 20px;
+	background: rgba( 255, 255, 255, 0.10 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	
+	/*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+
+}
+
+body::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#e91e63, #ffc107);
+	clip-path: circle(22% at 30% 20%);
+	
+}
+
+body::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#ffffff, #da00ff);
+	clip-path: circle(20% at 70% 90%);
+	
+}
+
+.box h2
+{
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+
+.box button
+{
+	margin-top: 20px;
+	padding: 10px 32px;
+	border-radius: 15px;
+	border: none;
+	outline: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 500;
+	background: #00b894;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.box button:hover
+{
+	background: #fff;
+	color: #00b894;
+}
+.joke
+{
+	font-size: 42px;
+	margin-top: 15px;
+}
